@@ -30,6 +30,10 @@ h3 {
     font-weight: 400;
     font-size: 3rem;
 }
+p {
+    font-size: 1.6rem;
+    line-height: 2;
+}
 .site-header {
     background-color: #ffffff;
 }
@@ -115,4 +119,32 @@ h3 {
 }
 .servicios {
     margin: 3rem auto;
+}
+.contenedor-servicios {
+    margin-top: 3rem;
+}
+@media (min-width:768px){
+    .contenedor-servicios {
+        display: flex;
+        justify-content: space-between;
+    }
+    .servicio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconos {
+    align-items: center; 
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-evenly; 
+    height: 100px;
+    margin-top: 2rem; 
+    width: 100px;
 }
